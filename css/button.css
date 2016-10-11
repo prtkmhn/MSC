@@ -1,0 +1,206 @@
+<style>
+*,
+*:before,
+*:after {
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  height: 100%;
+  overflow: hidden;
+}
+
+
+
+.absolute-center,
+.menu,
+.menu .btn .fa,
+.menu .btn.trigger .line {
+  position: absolute;
+  top: 65%;
+  left: 50%;
+  -webkit-transform: translateX(-50%) translateY(-65%);
+  -ms-transform: translateX(-50%) translateY(-865%);
+  transform: translateX(-50%) translateY(-65%);
+}
+.menu {
+  width: 5em;
+  height: 5em;
+
+}
+.menu b{display: none;}
+
+.menu .btn {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.15);
+  opacity: 0;
+  z-index: -10;
+  cursor: pointer;
+  -webkit-transition: opacity 1s, z-index 0.3s, -webkit-transform 1s;
+  transition: opacity 1s, z-index 0.3s, transform 1s;
+  -webkit-transform: translateX(0);
+  -ms-transform: translateX(0);
+  transform: translateX(0);
+}
+
+.menu .btn .fa {
+  font-size: 3em;
+  -webkit-transition: color 0.3s;
+  transition: color 0.3s;
+}
+
+.menu .btn:hover .fa { color: rgba(255, 255, 255, 0.7); }
+
+.menu .btn.trigger {
+  opacity: 1;
+  z-index: 100;
+  cursor: pointer;
+  -webkit-transition: -webkit-transform 0.3s;
+  transition: transform 0.3s;
+}
+
+
+.menu .btn.trigger:hover {
+  -webkit-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  transform: scale(1.2);
+}
+.menu .btn.trigger:hover .line { background-color: rgba(255, 255, 255, 0.7); }
+
+
+
+ }
+
+.menu .btn.trigger .line {
+  width: 60%;
+  height: 6px;
+  background: #000;
+  border-radius: 6px;
+  -webkit-transition: background-color 0.3s, height 0.3s, top 0.3s;
+  transition: background-color 0.3s, height 0.3s, top 0.3s;
+}
+
+
+.menu .rotater {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -webkit-transform-origin: 50% 50%;
+  -ms-transform-origin: 50% 50%;
+  transform-origin: 50% 50%;
+}
+
+
+.menu.active .btn-icon {
+  opacity: 1;
+  z-index: 50;
+}
+
+
+
+.rotater:nth-child(1) {
+  -webkit-transform: rotate(-22.5deg);
+  -ms-transform: rotate(-22.5deg);
+  transform: rotate(-22.5deg);
+}
+
+.menu.active .rotater:nth-child(1) .btn-icon {
+  -webkit-transform: translateX(-8em) rotate(22.5deg);
+  -ms-transform: translateX(-8em) rotate(22.5deg);
+  transform: translateX(-8em) rotate(22.5deg);
+}
+
+.rotater:nth-child(2) {
+  -webkit-transform: rotate(0deg);
+  -ms-transform: rotate(0deg);
+  transform: rotate(0deg);
+}
+
+.menu.active .rotater:nth-child(2) .btn-icon {
+  -webkit-transform: translateX(-8em) rotate(-0deg);
+  -ms-transform: translateX(-8em) rotate(-0deg);
+  transform: translateX(-8em) rotate(-0deg);
+}
+
+.rotater:nth-child(3) {
+  -webkit-transform: rotate(50deg);
+  -ms-transform: rotate(50deg);
+  transform: rotate(50deg);
+}
+
+.menu.active .rotater:nth-child(3) .btn-icon {
+  -webkit-transform: translateX(-8em) rotate(-50deg);
+  -ms-transform: translateX(-8em) rotate(-50deg);
+  transform: translateX(-8em) rotate(-50deg);
+}
+
+.rotater:nth-child(4) {
+  -webkit-transform: rotate(130deg);
+  -ms-transform: rotate(130deg);
+  transform: rotate(130deg);
+}
+
+.menu.active .rotater:nth-child(4) .btn-icon {
+  -webkit-transform: translateX(-8em) rotate(-130deg);
+  -ms-transform: translateX(-8em) rotate(-130deg);
+  transform: translateX(-8em) rotate(-130deg);
+}
+
+.rotater:nth-child(5) {
+  -webkit-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  transform: rotate(180deg);
+}
+
+.menu.active .rotater:nth-child(5) .btn-icon {
+  -webkit-transform: translateX(-8em) rotate(-180deg);
+  -ms-transform: translateX(-8em) rotate(-180deg);
+  transform: translateX(-8em) rotate(-180deg);
+}
+
+.rotater:nth-child(6) {
+  -webkit-transform: rotate(230deg);
+  -ms-transform: rotate(230deg);
+  transform: rotate(230deg);
+}
+
+.menu.active .rotater:nth-child(6) .btn-icon {
+  -webkit-transform: translateX(-8em) rotate(-230deg);
+  -ms-transform: translateX(-8em) rotate(-230deg);
+  transform: translateX(-8em) rotate(-230deg);
+}
+
+.rotater:nth-child(7) {
+  -webkit-transform: rotate(310deg);
+  -ms-transform: rotate(310deg);
+  transform: rotate(310deg);
+}
+
+.menu.active .rotater:nth-child(7) .btn-icon {
+  -webkit-transform: translateX(-8em) rotate(-310deg);
+  -ms-transform: translateX(-8em) rotate(-310deg);
+  transform: translateX(-8em) rotate(-310deg);
+}
+
+.menu a:hover {
+    color: #fff;
+}
+/*.menu a:hover i {
+    display: none;
+}
+.menu a:hover b {
+    display: block;
+*/
+}
+</style>
