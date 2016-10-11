@@ -10,6 +10,8 @@
   <script type='text/javascript' src='js/jquery.particleground.min.js'></script>
   <script type='text/javascript' src='js/demo.js'></script>
    <link rel="stylesheet" type="text/css" href="css/loadstyle.css"></link>
+   <link rel="stylesheet" type="text/css" href="css/button.css"></link>
+   <link href="http://netdna.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
 </head> 
 
 <body>
@@ -47,7 +49,54 @@
    
 </div>
 
+</script>
+</div>
+<div class="menu">
+  <div class="btn trigger"> <i class="fa fa-navicon"></i></span> </div>
+  <div class="rotater">
+    <a href="google.com"><div class="btn btn-icon"> <i class="fa fa-html5"></i><b>web front</b></div></a>
+  </div>
+  <div class="rotater">
+     <a href="google.com"><div class="btn btn-icon"> <i class="fa fa-android"></i><b>android</b> </div></a>
+  </div>
+  <div class="rotater">
+     <a href="google.com"><div class="btn btn-icon"> <i class="fa fa-database"></i> <b>web back</b></div></a>
+  </div>
+  <div class="rotater">
+     <a href="google.com"><div class="btn btn-icon"> <i class="fa fa-plug"></i> <b>electronics</b></div></a>
+  </div>
+  <div class="rotater">
+     <a href="google.com"><div class="btn btn-icon"> <i class="fa fa-newspaper-o"></i><b>news</b> </div></a>
+  </div>
+  <div class="rotater">
+     <a href="google.com"><div class="btn btn-icon"> <i class="fa fa-users"></i><b>user</b> </div></a>
+  </div>
+ 
+</div>
+
  </div>
+
+<script>
+$(document).ready(function() {
+  $(".trigger").click(function() {
+    $(".menu").toggleClass("active"); 
+  });
+});
+</script>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-36251023-1']);
+  _gaq.push(['_setDomainName', 'jqueryscript.net']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
 
  </body> 
 </html> 
